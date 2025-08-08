@@ -2,7 +2,7 @@ import React from 'react'
 import coverImg from '../assets/homepage.jpg'
 const RecommendedBook = ({setCurrentPage}) => {
   return (
-    <div className='flex flex-col gap-7 mt-10 mb-10 items-start'>
+    <div className='flex flex-col gap-7 mt-10 mb-10 items-start border-[#e4ecf5] border-3 rounded-lg p-8 w-[400px]'>
         <div className='flex gap-6'>
             <div>
                 <img className='w-[100px] h-[100px] rounded-lg' src={coverImg} alt="coverImg" />
@@ -15,9 +15,9 @@ const RecommendedBook = ({setCurrentPage}) => {
             </div>
         </div>
        
-        <p className='w-[80%]'> <span className='font-semibold'>Synopsis:</span> <br />
+        <p className='w-[90%]'> <span className='font-semibold'>Synopsis:</span> <br />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam praesentium, consectetur minus, dicta officiis, sunt asperiores impedit suscipit labore a illum eos quas deleniti reprehenderit ab non soluta quia totam.</p>
-        <button className='bg-[#1466B8] -mt-4 cursor-pointer text-white px-4 py-1 rounded-lg' onClick={()=>setCurrentPage('saved-list')}>Save</button>
+        <button className='bg-[#1747B5] -mt-4 cursor-pointer text-white px-4 py-1 rounded-lg' onClick={()=>setCurrentPage('saved-list')}>Save</button>
     </div>
   )
 }

@@ -13,31 +13,31 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 				<h2 className="text-3xl font-semibold mb-10 text-center">
 					{signPage ? "Create Your Account" : "Log into your Account"}
 				</h2>
-				<div className="flex justify-center items-center flex-col w-[60%]">
+				<div className="flex justify-center items-center flex-col ">
 					<form>
 						<p>Name</p>
 						<input
-							className="w-90 rounded-lg h-9 pl-3 mt-2 mb-7 bg-gray-200"
+							className="w-90 rounded-lg h-9 pl-3 mt-2 mb-7 border-[#E5EDF5] border-2 text-[#e4ecff] sm:w-sm md:w-lg p-2 "
 							type="text"
 							placeholder="Enter your name"
 						/>
 
 						<p>Email</p>
 						<input
-							className="w-90 rounded-lg h-9 pl-3 mt-2 mb-7 bg-gray-200"
+							className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2 "
 							type="text"
 							placeholder="Enter your email"
 						/>
 
 						<p>Password</p>
 						<input
-							className="w-90 rounded-lg h-9 pl-3 mt-2 mb-7 bg-gray-200"
+							className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2"
 							type="text"
 							placeholder="Enter your password"
 						/>
 
 						<button
-							className="w-90 block text-white rounded-lg h-9 pl-3 mt-2 mb-7 bg-[#1466B8]"
+							className="w-90 block m-auto text-white rounded-lg h-9 pl-3 mt-2 mb-7 bg-[#1747B5]"
 							onClick={handleClick}
 						>
 							{signPage ? "Sign up" : "Log in"}
@@ -49,10 +49,10 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 						or {signPage ? "Sign up" : "Log in"} with
 					</p>
 					<div>
-						<button className="bg-gray-200 px-4 py-2 font-semibold rounded-lg text-center mr-3">
+						<button className="bg-white text-black px-4 py-2 font-semibold rounded-lg text-center mr-3">
 							Continue with Google
 						</button>
-						<button className="bg-gray-200 px-4 py-2 font-semibold rounded-lg text-center ">
+						<button className="bg-white text-black px-4 py-2 font-semibold rounded-lg text-center ">
 							Continue with Facebook
 						</button>
 					</div>

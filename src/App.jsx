@@ -10,7 +10,7 @@ import Recommended from "./components/Recommended";
 import SavedList from "./components/SavedList";
 
 function App() {
-	const [currentPage, setCurrentPage] = useState("home");
+	const [currentPage, setCurrentPage] = useState("recommended");
 	const [signedIn, setSignedIn] = useState(false);
 
 	const renderPage = () => {

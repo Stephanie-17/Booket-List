@@ -7,7 +7,7 @@ const SignedIn = ({ setCurrentPage }) => {
 				You have sucessfully signed in
 			</p>
 			<button
-				className="block bg-[#1466B8] cursor-pointer text-white px-4 py-2 rounded-lg mt-4"
+				className="block bg-[#1747B5] cursor-pointer text-white px-4 py-2 rounded-lg mt-4"
 				onClick={() => setCurrentPage("input")}
 			>
 				Get started!

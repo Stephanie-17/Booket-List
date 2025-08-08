@@ -16,11 +16,11 @@ const Input = ({ setCurrentPage }) => {
 						autoFocus
 						type="text"
 						placeholder="Enter the last 3 books you read"
-						className="min-w-66 lg:w-96 bg-gray-200 p-2 mt-3 rounded-lg lg:text-center"
+						className="min-w-66 lg:w-96 p-4 mt-3 rounded-lg lg:text-center border-[#E5EDF5]  h-9 pl-3  mb-7 border-3 text-[#e4ecff] w-70 sm:w-sm md:w-lg "
 					/>
 
 					<button
-						className="block bg-[#1466B8] cursor-pointer text-white px-4 py-2 rounded-lg mt-4"
+						className="block bg-[#1747B5] cursor-pointer text-white px-4 py-2 rounded-lg mt-4"
 						onClick={() => setCurrentPage("recommended")}
 					>
 						Submit
