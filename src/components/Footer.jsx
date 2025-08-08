@@ -1,0 +1,20 @@
+import React from "react";
+
+const Footer = () => {
+	return (
+		<div className="bottom-0 fixed left-0 right-0">
+			<p className="text-gray-600 flex justify-center items-center mt-38">
+				Made with ❤️ by{" "}
+				<span className="p-1">
+					<a href="https://github.com/Stephanie-17">Stephanie</a>
+				</span>{" "}
+				and{" "}
+				<span className="p-1">
+					<a href="https://github.com/JaminCO">Jamin</a>
+				</span>
+			</p>
+		</div>
+	);
+};
+
+export default Footer;
