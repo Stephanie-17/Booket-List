@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Input from "./components/Input";
 import SignedIn from "./components/SignedIn";
 import Recommended from "./components/Recommended";
+import SavedList from "./components/SavedList";
 
 function App() {
 	const [currentPage, setCurrentPage] = useState("home");
@@ -25,7 +26,9 @@ function App() {
 			case "input":
 				return <Input setCurrentPage={setCurrentPage} />;
 			case "recommended":
-				return <Recommended />;
+				return <Recommended setCurrentPage={setCurrentPage} />;
+      case "saved-list":
+        return <SavedList />
 			default:
 				return <HomePage />;
 		}

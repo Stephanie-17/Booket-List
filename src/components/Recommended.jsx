@@ -1,7 +1,7 @@
 import React from "react";
 import RecommendedBook from "./RecommendedBook";
 
-const Recommended = () => {
+const Recommended = ({setCurrentPage}) => {
 	return (
 		<div className="flex flex-col ml-5 sm:ml-15 lg:ml-25 mt-10">
 			<p className="font-bold text-2xl lg:text-3xl mb-5">Recommended reads</p>
@@ -18,8 +18,8 @@ const Recommended = () => {
 					Sort
 				</button>
 			</div>
-			<RecommendedBook />
-            <RecommendedBook />
+			<RecommendedBook setCurrentPage={setCurrentPage} />
+            <RecommendedBook setCurrentPage={setCurrentPage}/>
 		</div>
 	);
 };
