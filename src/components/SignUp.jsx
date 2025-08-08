@@ -45,7 +45,7 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 					</form>
 				</div>
 				<div className="flex flex-col items-center justify-center">
-					<p className="mt-5 text-gray-400 text-sm mb-4 text-center">
+					{/* <p className="mt-5 text-gray-400 text-sm mb-4 text-center">
 						or {signPage ? "Sign up" : "Log in"} with
 					</p>
 					<div>
@@ -55,7 +55,7 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 						<button className="bg-white text-black px-4 py-2 font-semibold rounded-lg text-center ">
 							Continue with Facebook
 						</button>
-					</div>
+					</div> */}
 
 					<p
 						className="text-gray-400 mt-6 underline cursor-pointer"

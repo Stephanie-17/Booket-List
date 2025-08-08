@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div className="bottom-0 left-0 right-0">
-			<p className="text-gray-600 flex justify-center items-center mt-38">
+			<p className="text-gray-400 flex justify-center underline items-center mt-38">
 				Made with ❤️ by{" "}
 				<span className="p-1">
 					<a href="https://github.com/Divinedew">Divinedew,</a>

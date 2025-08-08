@@ -6,7 +6,7 @@ const Recommended = ({setCurrentPage}) => {
 		<div className="flex flex-col ml-5 sm:ml-15 lg:ml-25 mt-10">
 			<p className="font-bold text-2xl lg:text-3xl mb-5">Recommended reads</p>
 			<input
-				className="border-[#E5EDF5] border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2 rounded-lg mb-5"
+				className="border-[#E5EDF5] border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2  rounded-lg mb-5"
 				type="search"
 				placeholder="Search"
 			/>
