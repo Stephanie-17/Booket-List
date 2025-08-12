@@ -10,7 +10,7 @@ import Recommended from "./components/Recommended";
 import SavedList from "./components/SavedList";
 
 function App() {
-	const [currentPage, setCurrentPage] = useState("home");
+	const [currentPage, setCurrentPage] = useState("input");
 	const [signedIn, setSignedIn] = useState(false);
 
 	const renderPage = () => {
@@ -27,8 +27,8 @@ function App() {
 				return <Input setCurrentPage={setCurrentPage} />;
 			case "recommended":
 				return <Recommended setCurrentPage={setCurrentPage} />;
-      case "saved-list":
-        return <SavedList />
+			case "saved-list":
+				return <SavedList />;
 			default:
 				return <HomePage />;
 		}

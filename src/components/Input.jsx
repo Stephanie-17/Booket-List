@@ -1,6 +1,16 @@
 import React from "react";
+import { useState } from "react";
 
 const Input = ({ setCurrentPage }) => {
+	const [input, setInput] = useState('')
+
+	function handleSubmit() {
+	 const books = input.split(',')
+   const bookJSON= JSON.stringify({"books":books})
+	 console.log(bookJSON)
+	 setCurrentPage("recommended")
+	}
+
 	return (
 		<div className="flex flex-col justify-center items-center mt-36">
 			<div className="w-[85%] ">
@@ -9,19 +19,23 @@ const Input = ({ setCurrentPage }) => {
 				</h2>
 				<p className="text-gray-400 text-sm mt-3 text-center lg:text-base">
 					For a more specific search, use this format: 'Book1 name by Author1
-					name, Book2 name by Author2 name, ...'
+					name, Book2 name by Author2 name, ...' <br /> Use a comma (',') to seperate the book details
 				</p>
-				<form className="flex flex-col justify-center items-center" action="">
+				
+				<form className="flex flex-col justify-center items-center" action="" onSubmit={handleSubmit}>
 					<input
 						autoFocus
 						type="text"
+						value={input}
+						onChange={(e)=>setInput(e.target.value)}
 						placeholder="Enter the last 3 books you read"
 						className="min-w-66 lg:w-96 p-4 mt-3 rounded-lg lg:text-center border-[#E5EDF5]  h-9 pl-3  mb-7 border-3 text-[#e4ecff] w-70 sm:w-sm md:w-lg "
 					/>
 
 					<button
 						className="block bg-[#1747B5] cursor-pointer text-white px-4 py-2 rounded-lg mt-4"
-						onClick={() => setCurrentPage("recommended")}
+					
+						type="submit"
 					>
 						Submit
 					</button>

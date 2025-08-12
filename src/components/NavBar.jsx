@@ -16,7 +16,7 @@ const NavBar = ({ setCurrentPage, signedIn }) => {
 				</div>
 			) : (
 				<button
-					className="bg-[#1747B5] cursor-pointer text-white px-4 py-2 rounded-lg"
+					className="bg-[#4573A1]  cursor-pointer text-white px-4 py-2 rounded-lg"
 					onClick={() => setCurrentPage("sign-up")}
 				>
 					Sign In
