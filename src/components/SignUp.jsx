@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const SignUp = ({ setCurrentPage, setSignedIn }) => {
+const SignUp = ({ setSignedIn }) => {
 	const [signPage, setSignPage] = useState(true);
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
 
 	function handleClick() {
 		console.log("tap");
@@ -32,8 +34,8 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 				password,
 			};
 			console.log(info);
-			setCurrentPage("signed-in");
 			setSignedIn(true);
+			navigate('/signed-in')
 			setEmail("");
 			setPassword("");
 			setName("");
@@ -77,14 +79,16 @@ const SignUp = ({ setCurrentPage, setSignedIn }) => {
 							value={password}
 							onChange={(e) => handlePasswordChange(e.target.value)}
 						/>
-
-						<button
+           
+						  <button
 							className="w-90 block m-auto text-white rounded-lg h-9 pl-3 mt-2 mb-7 bg-[#1747B5]"
 							onClick={handleClick}
 							type="submit"
 						>
 							{signPage ? "Sign up" : "Log in"}
 						</button>
+					
+						
 					</form>
 				</div>
 				<div className="flex flex-col items-center justify-center">
