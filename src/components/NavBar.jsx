@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 
 const NavBar = ({ signedIn }) => {
 	return (
-		<div className="flex justify-between items-center mx-8 my-4 ">
+		<div className="flex justify-between items-center mx-4 sm:mx-8 my-4 ">
 			<Link to="/">
-				<h2 className="font-bold text-xl cursor-pointer">Booket List</h2>
+				<h2 className="font-bold text-lg sm:text-xl cursor-pointer">Booket List</h2>
 			</Link>
 
 			{signedIn ? (
-				<div className="flex justify-between items-center pr-7 sm:pr-0 ">
+				<div className="flex justify-between items-center text-sm ">
 					{" "}
 					<Link to="/input">
-						<p className="px-5">Get Started</p>
+						<p className="pr-2 sm:px-5">Get Started</p>
 					</Link>
 					<Link to="/saved-list">
-						<p className="pl-5">Saved List</p>
+						<p className="sm:pl-5">Saved List</p>
 					</Link>
 				</div>
 			) : (

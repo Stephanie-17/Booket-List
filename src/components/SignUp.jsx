@@ -43,7 +43,7 @@ const SignUp = ({ setSignedIn }) => {
 						<form onSubmit={(e) => handleSubmit(e)}>
 							<p>Name</p>
 							<input
-								className="w-60 rounded-lg h-9 pl-3 mt-2 mb-7 border-[#E5EDF5] border-2 text-[#e4ecff] sm:w-sm md:w-lg p-2 "
+								className="w-70 rounded-lg h-9 pl-3 mt-2 mb-7 border-[#E5EDF5] border-2 text-[#e4ecff] sm:w-sm md:w-lg p-2 "
 								type="text"
 								placeholder="Enter your name"
 								value={name}
@@ -52,7 +52,7 @@ const SignUp = ({ setSignedIn }) => {
 
 							<p>Email</p>
 							<input
-								className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-60 sm:w-sm md:w-lg p-2 "
+								className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2 "
 								type="text"
 								placeholder="Enter your email"
 								value={email}
@@ -61,7 +61,7 @@ const SignUp = ({ setSignedIn }) => {
 
 							<p>Password</p>
 							<input
-								className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-60 sm:w-sm md:w-lg p-2"
+								className="border-[#E5EDF5] rounded-lg h-9 pl-3 mt-2 mb-7 border-2 text-[#e4ecff] w-70 sm:w-sm md:w-lg p-2"
 								type="password"
 								placeholder="Enter your password"
 								value={password}
