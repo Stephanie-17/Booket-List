@@ -3,17 +3,17 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div className="bottom-0 left-0 right-0">
-			<p className="text-gray-400 flex justify-center underline items-center mt-38">
-				Made with ❤️ by{" "}
-				<span className="p-1">
+			<p className="text-gray-400 text-center p-6   text-sm items-center mt-38">
+				Made with ❤️ by
+				<span className="p-1 underline">
 					<a href="https://github.com/Divinedew">Divinedew,</a>
 				</span>
-				{" "}
-				<span className="p-1">
+				
+				<span className="p-1 underline">
 					<a href="https://github.com/Stephanie-17">Stephanie</a>
-				</span>{" "}
-				and{" "}
-				<span className="p-1">
+				</span>
+				and
+				<span className="p-1 underline">
 					<a href="https://github.com/JaminCO">Jamin</a>
 				</span>
 			</p>
