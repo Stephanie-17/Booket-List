@@ -5,7 +5,7 @@ const HomePage = () => {
 	return (
     <>
       <title>Booket List | Home</title>
-      <div className="flex justify-center items-center mb-30 h-[80vh]">
+      <div className="flex justify-center items-center mb-30 h-[80vh]  sm:h-[100vh]">
         <div className="flex justify-center items-center flex-col -mt-29 sm:mt-8">
           <div className="flex justify-center items-center">
             <img className="w-[90%] lg:w-[70%] " src={heroImg} alt="" />
